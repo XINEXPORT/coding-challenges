@@ -1,3 +1,6 @@
+//WRITE A FUNCTION THAT CHECKS IF A WORD IS A PALINDROME
+
+
 //we need to split the word into in array with .split()
 //then we get [n,o,o,n]
 //then we need loop through the array
@@ -47,6 +50,9 @@ const isPali = str => {
   }
   return true
 }
+
+//WRITE A FUNCTION THAT RETURNS TRUE IF A WORD CONTAINS MORE THAN HALF THE AMOUNT OF VOWELS
+//RETURN FALSE IS THE WORD CONTAINS LESS THAN HALF THE AMOUNT 
 
 const hasMoreVowels = (word) => {
     let wordArr = str.split("")
