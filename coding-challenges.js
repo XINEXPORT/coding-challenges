@@ -86,10 +86,31 @@ const hasMoreVowels = (word) => {
       }
       return vowelCount>word.length/2
     }
-    
-    
-  
 
+//add to Zero
+//give an array of numbers
+//console.log true if any 2 numbers add to zero
+//othwerwise console.log false
+
+//you need to create an addtoZero function
+//you need an empty array
+//you need to loop over the array
+// then you need to perform another loop to sum the pairs to see if any of them add up to 0
+//then you need an if statement to console.log true if any pairs add up to zero
+//then you need an else statement to return false for the remaining scenarios
+
+const addtoZero =(arr)=>{
+  for (let i = 0; i<arr.length; i++){
+    for(let j = i+1; j<arr.length; j++){
+      if (arr[i] + arr[j]===0){
+      return true;
+  }
+  }
+  }
+return false
+}
+    
+addtoZero([4,4,0,0,0,-4])
 
 
 
