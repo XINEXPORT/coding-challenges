@@ -157,7 +157,29 @@ const hasUnique = str =>{
 const hasUnique = str=>{new Set([...str].size===str.length)}
 
 ///////////////////////////////////////////////////////
+// create a function
+// we need an Array
+// this array will have integers
+// array will be all evens with 1 odd Number
+// or the other way around
+// function should find the odd number out
 
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    even.push(arr[i]);
+  } else {
+    odd.push(arr[i]);
+  }
+}
+
+if (even.length === 1) {
+  return even[0];
+} else {
+  return odd[0];
+};
+
+oddOneOut([2,4,64,11,8])
+oddOneOut([3,7,21,4,93,73,49])
 
 
 
