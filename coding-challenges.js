@@ -181,7 +181,37 @@ if (even.length === 1) {
 oddOneOut([2,4,64,11,8])
 oddOneOut([3,7,21,4,93,73,49])
 
+///////////////////////////////////
 
+//HOW TO USE SORT
+//LOOK AT W3 SCHOOLS EXPLANATION OF SORTING 
+let arr = [15,12,13,11,9,6,3,5,7,2,1,8,10,14,4]
+
+console.log(arr.sort())
+
+console.log(arr.sort((a,b) => {
+    console.log(`${a} - ${b} = ${a - b}`)
+    return a - b
+}))
+
+let shirts = "s,s,m,s,m,xs,xl,s,m,l,l,l,l,s,m,m,m,s,l,s,s,l,l,l,s,s,xs,xl"
+
+const sorter = (str) => {
+    let sortingPattern = {
+        "xs": 0,
+        "s": 1,
+        "m": 2,
+        "l": 3,
+        'xl':4
+    }
+
+    let arr = str.split(",")
+    let sorted = arr.sort((a,b) => sortingPattern[a] - sortingPattern[b])
+
+    return sorted.join('')
+}
+
+console.log(sorter(shirts))
 
 
 
