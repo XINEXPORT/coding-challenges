@@ -213,9 +213,60 @@ const sorter = (str) => {
 
 console.log(sorter(shirts))
 
+////////////////////////////
+// Write a function called printDigits that takes in arg called num
+// When given an Integer, the function should print console.log 
+// each digit in reverse order, starting with the ones place
+// DO NOT TURN THE NUMBER INTO A STRING AND REVERSE IT 
+// Solve the problem using math
+// (Hint: look up while loops, dont forget about the % operator)
 
+// a loop that runs while we still have digits to print
+// an operation that tells us what the last digit is
+// reduce the number by 1 digit
+// keep running until no digits left to print
 
+// const printDigits = num =>{
+//   let arr = str.split("")
+//   let  i = 0;
+//   let text = ""
+  
+//   while (arr[i] % 10 ){
+//       text += arr[i]
+//       i++
+//          }
+// console.log(printDigits())
+// }
 
+// printDigits(314)
+
+// ["3", "1", "4"]
+
+const printDigits = num =>{
+  let arr = str.split("")
+  let newArr = []
+  for(let i = 0; i<arr.length; i++){
+    if(arr[i] % 10)
+  }
+}
+
+//(314)
+//["3", "1", "4"]
+//  3 % 10 = .3
+//  1 % 10 = .1
+// 4 % 10 = .4
+
+const printDigits = num =>{
+  //while our number still has value
+  while (num){
+    let digit  = num % 10
+    console.log(digit)
+    //this turn 314 into 310
+    num -=digit 
+    //this turns 310 into 31
+    num /= 10
+  }
+}
 
 
 
