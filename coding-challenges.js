@@ -268,5 +268,64 @@ const printDigits = num =>{
   }
 }
 
+//WRITE A FUNCTION
+//ACCEPTS ARRAY OF 1- INTEGERS
+//BETWEEN 0 AND 9
+//FUNCTION SHOULD RETURN A STRING OF THOSE NUMBERS
+//IN A PHONE NUMBER FORMAT
+
+//O(1)
+const phone = arr =>{
+  return `(${arr[0]} ${arr[1]} ${arr[2]} ${arr[3]} ${arr[4]})`
+}
+
+//AMERICAN PHONE
+const phone = arr =>{
+  let template = "(xxx) xxx-xxxx"
+
+  for (i=0; i<arr.length; i++){
+    template = template.replace("x", arr[i])
+  }
+  return template
+}
+
+//.replace and .replaceAll
+//replaces the first instance of the array
+let str = 'xx xx xx xx'
+let arr = [1,2,3,4,5,6,7,8]
+
+for (let i=0; i<arr.length; i++){
+  str = str.replace('x', arr[i])
+}
+
+//replaces all the instances of x with 1
+let str = 'xx xx xx xx'
+let arr = [1,2,3,4,5,6,7,8]
+
+for (let i=0; i<arr.length; i++){
+  str = str.replaceAll('x', arr[i])
+}
+
+//.replace broken down in a nest loop
+const phone = (arr)=>{
+  let template = '(xxx) xxx-xxxx'
+  let phoneNum = ''
+
+  for (let i = 0; i < arr.length; i++){
+    for (let j = 0; j < template.length; j++){
+      if (template[j] === 'x'){
+          phoneNum += arr[i]
+          break;
+      } else{
+        phoneNum += template[j]
+      }
+    }
+  }
+  return phoneNum
+}
+
+phone ([1,2,3,4,5,6,7,8])
+
+
 
 
