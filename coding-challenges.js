@@ -312,7 +312,7 @@ const phone = (arr)=>{
   let phoneNum = ''
 
   for (let i = 0; i < arr.length; i++){
-    for (let j = 0; j < template.length; j++){
+    for (let j = phoneNum.length; j < template.length; j++){
       if (template[j] === 'x'){
           phoneNum += arr[i]
           break;
@@ -324,7 +324,39 @@ const phone = (arr)=>{
   return phoneNum
 }
 
-phone ([1,2,3,4,5,6,7,8])
+phone ([1,2,3,4,5,6,7,8,9,10])
+
+///////////////////////////////////////
+
+// const decode = (str) = {
+//   let arr = str.split("")
+//   let newArr = []
+//   for (let i=0; i<-arr.length; i++){
+//     if (Math.isInteger(+arr[i])){
+//       i+= +arr[i]
+//     } else{
+//     newArr.push[arr[i]]
+//     }
+//   }
+//   return newArr.join()
+// }
+
+// decode("01h33e44y")
+
+const decode = (str) => {
+  let answer = "";
+  for (let i = 0; i < str.length; i++) {
+    if (Number.isInteger(+str[i])) {
+      i += +str[i];
+    } else{
+      answer += str[i]
+    }
+  }
+  return answer;
+};
+
+decode ('0h2xce5ngbdry')
+decode ('2bna0plmp20sl0e')
 
 
 
