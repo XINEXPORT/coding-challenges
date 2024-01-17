@@ -359,5 +359,73 @@ decode ('0h2xce5ngbdry')
 decode ('2bna0plmp20sl0e')
 
 
+///////////////////////////
+// Write a function called best that return the max profit possible for buying and selling stock
+// The best function will be given an array of stock prices in the order they happened throughout the day
+// It should return the max profit stock for that day
+//The following prices, our best option would have been to buy the stock at $10 and sell it at $22
+// the profit difference is 12
+//best ([15,10,20,22,1,9])
+
+//you need a function
+//you need 3 place holder arrays
+  //lowest
+  //highest
+  //diff = profit 
+//you need a loop
+//you need to push the highest value in the loop
+//you need to push the lowest value in the loop
+//you need to only push values next to each other
+
+// const best = arr =>{
+//   let low = []
+//   let max = []
+//   let diff = []
+  
+//   for (let i; i<arr.length; i++){
+//     for (let j; j<arr.length; j++){
+//     if (Number.MIN_VALUE(arr[i])){
+//        arr[i].push = low
+//     } else if (
+//          Number.MAX_VALUE(arr[i])){
+//          arr[i].push = max
+//        }
+//       }
+//     }
+//     return max-low
+//   }
+
+// best ([1,2,3,4,5])
+
+
+const best = arr =>{
+  //keep track of the lowest price of the day
+  //compare profits aka difference
+  //loop through the prices
+  let low = arr[0]
+  let prof = 0
+  
+  for (let i; i<arr.length; i++){
+    if(arr[i] < lowest){
+      lowest = arr[i]
+    }
+    let difference = arr[i]-lowest
+    
+    if(difference>profit){
+      profit = difference
+    }
+  }
+  
+  return profit
+}
+
+console.log(best([15,10,20,22,1,9]))
+console.log(best([1,2,3,4,5]))
+console.log(best([5,4,3,2,1]))
+
+
+
+
+
 
 
