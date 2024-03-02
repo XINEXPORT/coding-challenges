@@ -423,6 +423,37 @@ console.log(best([15,10,20,22,1,9]))
 console.log(best([1,2,3,4,5]))
 console.log(best([5,4,3,2,1]))
 
+///////////////////////////////////////
+///fizzBuzz
+
+// const fizzbuzz = ()=>{
+//   let arr = []
+//   for (let i = 0; arr.length-1; i++){
+//     if(arr[i] % 5){
+//       console.log("buzz")
+//     } else if ( arr[i] % 3) {
+//       console.log("fizz")
+//     } else {
+//       console.log("fizzbuzz")
+//     }
+//   }
+// }
+
+// fizzbuzz("1,2,3,4,5")
+
+const fizzBuzz = (n)=>{
+  for (let i =1; i<=n; i++){
+    if(i % 3 === 0 && i % 5===0){
+      console.log("fizzbuzz")
+    } else if( i % 3===0){
+      console.log("fizz")
+    } else if (i % 5===0){
+      console.log("buzz")
+    }
+  }
+}
+
+fizzBuzz(15)
 
 
 
