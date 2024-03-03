@@ -481,6 +481,19 @@ simpleArraySum([1,2,3,4])
 
 
 
+///////// a very big sum
+const aVeryBigSum = (arr) =>{
+  let sum = 0
+    for (let i=0; i<=arr.length-1; i++){
+      sum += arr[i]
+    }
+  return sum
+}
+
+aVeryBigSum([1000000001,1000000002, 1000000003, 1000000004, 1000000005])
+
+
+
 
 
 
