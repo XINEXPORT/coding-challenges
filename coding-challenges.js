@@ -426,6 +426,7 @@ console.log(best([5,4,3,2,1]))
 ///////////////////////////////////////
 ///fizzBuzz
 
+//my solution
 // const fizzbuzz = ()=>{
 //   let arr = []
 //   for (let i = 0; arr.length-1; i++){
@@ -454,6 +455,29 @@ const fizzBuzz = (n)=>{
 }
 
 fizzBuzz(15)
+
+///simple array sum
+
+//my solution
+// const simpleArraySum = (arr)=>{
+//   let sum = 0
+//     for (let i=0; i<arr.length; i++){
+//       for (let j = i+1; j<arr.length; j++){
+//         sum = i+j
+//       }
+//     }
+//     }
+
+const simpleArraySum = (arr)=>{
+  let sum = 0
+    for (let i=0; i<arr.length; i++){
+        sum += arr[i]
+    }
+  return sum
+    }
+
+
+simpleArraySum([1,2,3,4])
 
 
 
