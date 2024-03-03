@@ -526,6 +526,9 @@ miniMaxSum([1, 2, 3, 4, 5])
 //Minimum Suffix Flips
 //https://leetcode.com/problems/minimum-suffix-flips/description/
 
+//Number of Beautiful Integers in a range
+//https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/description/
+
 
 //Uncommon Words From Two Sentences
 //https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
