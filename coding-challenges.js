@@ -492,6 +492,36 @@ const aVeryBigSum = (arr) =>{
 
 aVeryBigSum([1000000001,1000000002, 1000000003, 1000000004, 1000000005])
 
+//miniMaxSum
+
+//my solution
+// const miniMaxSum = (arr) =>{
+//   let sum = 0
+//     for(let i = 0; i<arr.length;i++){
+//       sum += arr[i]-1
+//     }
+//   return sum
+// }
+
+const miniMaxSum = (arr) =>{
+  let min = arr[0];
+  let max = arr[0];
+  let sum = 0;
+for (let i = 0; i< arr.length; i++){
+  if(max<arr[i]){
+    max = arr[i];
+  }
+  if (min>arr[i]){
+    min = arr[i];
+  }
+  sum +=arr[i];
+}
+  let maxsum = sum-min
+  let minsum = sum-max
+  console.log(minsum + ' ' + maxsum)
+}
+
+miniMaxSum([1, 2, 3, 4, 5])
 
 
 
