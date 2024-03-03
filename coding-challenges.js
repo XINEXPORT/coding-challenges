@@ -523,6 +523,18 @@ for (let i = 0; i< arr.length; i++){
 
 miniMaxSum([1, 2, 3, 4, 5])
 
+//Minimum Suffix Flips
+//https://leetcode.com/problems/minimum-suffix-flips/description/
+
+
+//Uncommon Words From Two Sentences
+//https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
+
+
+//Count Numbers with Unique Digits
+//https://leetcode.com/problems/count-numbers-with-unique-digits/description/
+
+
 
 
 
